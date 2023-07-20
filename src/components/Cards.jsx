@@ -1,4 +1,3 @@
-
 import React, {useState, useEffect} from 'react'
 import Episodes from './Episodes'
 
@@ -84,7 +83,7 @@ function Cards() {
                             <h3>{char.name}</h3>
                             <p>Status: {char.status}</p>
                             <p>Species: {char.species}</p>
-                            <button onClick={() =>{HandleClick1(char)}}>Select</button>
+                            <button style={name1 === char.name ? {"background-color":"#97ce4c", "color":"#000" } : {"background":"none"}} onClick={() =>{HandleClick1(char)}}>{name1 === char.name ? "Selected" : "Select"}</button>
                         </div>
                         </li>
                     ))
@@ -109,7 +108,7 @@ function Cards() {
                             <h3>{char.name}</h3>
                             <p>Status: {char.status}</p>
                             <p>Species: {char.species}</p>
-                            <button className='select_btn2' onClick={() =>{HandleClick2(char)}}>Select</button>
+                            <button style={name2 === char.name ? {"background-color":"#f0e14a", "color":"#000" } : {"background":"none"}} className='select_btn2' onClick={() =>{HandleClick2(char)}}>{name2 === char.name ? "Selected" : "Select"}</button>
                         </div>
                         </li>
                     ))
