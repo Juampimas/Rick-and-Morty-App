@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  scroll-behavior: smooth;
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #97ce4c;
+    border-radius: 10px;
+  }
+}
+body{
+  background-color: #2E2E2E;
+  font-size: 16px;
+  color: #fff
+}
+
+
+
+// Components
+@import "../src/styles/Loader.scss";
+@import "../src/styles/Header.scss";
+@import "../src/styles/Cards.scss";
+@import "../src/styles/CharacterContainer.scss";
+@import "../src/styles/Episodes.scss";

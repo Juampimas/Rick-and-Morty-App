@@ -1,0 +1,44 @@
+.episodesContainer{
+    margin: 3em 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    .episodesCol{
+        overflow-y:scroll;
+        padding: 1em 2em;
+        background-color: #242424;
+        min-width: 32em;
+        max-width: 35em;
+        height: 30em;
+        border-radius: 20px;
+        h2{
+            margin: 1em 0;
+        }
+        .character1{
+            li{
+                list-style: none;
+                span{
+                    color: #97ce4c;
+                }
+            }
+        }
+        .character2{
+            li{
+                list-style: none;
+                span{
+                    color: #f0e14a;
+                }
+            }
+        }
+        .shared_episodes{
+            li{
+                list-style: none;
+                span{
+                    color: #e4a788;
+                }
+            }
+        }
+    }
+}
